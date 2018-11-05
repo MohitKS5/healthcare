@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6d43625-24cc-4187-b590-2e6f2161d676" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medicine.html" beforeDir="false" afterPath="$PROJECT_DIR$/medicine.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pres.html" beforeDir="false" afterPath="$PROJECT_DIR$/pres.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/HEALTHCAREMANAGEMENT.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/blood-pressure-3524615.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/checklist-3222079.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/childrens-operation-theatre-555091.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/doctor-2860504.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/doctor-3464761.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/document-3271743.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/hospital-3098683.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/medic-563423.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/medicine-163707.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/medicine-3264743.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/operation-theatre-555088.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/syringe-1884784.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/syringe-435809.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/woman-3187087.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/pres.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
-              <caret line="32" column="9" lean-forward="true" selection-end-line="45" selection-end-column="7" />
+              <caret line="32" column="9" selection-end-line="45" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -84,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/medicine.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+            <state relative-caret-position="544">
+              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -94,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/pd.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
-              <caret line="30" column="16" lean-forward="true" selection-end-line="49" selection-end-column="7" />
+              <caret line="30" column="16" selection-end-line="49" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -103,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/css/form.css">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -209,12 +220,12 @@
       <updated>1541416077388</updated>
       <workItem from="1541416078732" duration="1679000" />
       <workItem from="1541421606405" duration="4795000" />
-      <workItem from="1541448969581" duration="469000" />
+      <workItem from="1541448969581" duration="767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6943000" />
+    <option name="totallyTimeSpent" value="7241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -305,7 +316,7 @@
     <entry file="file://$PROJECT_DIR$/css/form.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -319,21 +330,21 @@
     <entry file="file://$PROJECT_DIR$/pd.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="30" column="16" lean-forward="true" selection-end-line="49" selection-end-column="7" />
+          <caret line="30" column="16" selection-end-line="49" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pres.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
-          <caret line="32" column="9" lean-forward="true" selection-end-line="45" selection-end-column="7" />
+          <caret line="32" column="9" selection-end-line="45" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/medicine.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        <state relative-caret-position="544">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
         </state>
       </provider>
     </entry>
