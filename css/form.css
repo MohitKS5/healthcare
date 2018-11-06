@@ -52,10 +52,12 @@ form {
     resize: none;
     overflow: hidden;
 }
+
 input:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder {
     color: #03A9F4;
 }
+
 input:focus, input:valid,
 textarea:focus,
 textarea:valid {
@@ -63,6 +65,7 @@ textarea:valid {
     outline: none;
     background-position: 0 0;
 }
+
 input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder,
 textarea:valid::-webkit-input-placeholder {
@@ -79,6 +82,7 @@ input[type="email"] {
     background-repeat: no-repeat;
     transition: border-bottom 0.3s ease, background 0.3s ease;
 }
+
 input[type="email"] ~ span.validation-text {
     position: absolute;
     visibility: hidden;
@@ -90,6 +94,7 @@ input[type="email"] ~ span.validation-text {
     color: white;
     transition: color 0.3s ease-in-out;
 }
+
 input[type="email"]:not([value=""])::-webkit-input-placeholder {
     font-size: 0.8em;
     -webkit-transform: translateY(-20px);
@@ -97,27 +102,34 @@ input[type="email"]:not([value=""])::-webkit-input-placeholder {
     visibility: visible !important;
     opacity: 1;
 }
+
 input[type="email"]:not([value=""]):focus::-webkit-input-placeholder {
     color: #03A9F4;
 }
+
 input[type="email"]:not([value=""]):focus:not(:valid)::-webkit-input-placeholder {
     color: #E91E63;
 }
+
 input[type="email"]:focus {
     background-position: 0 0;
 }
+
 input[type="email"]:focus:not(:valid):not([value=""]) {
     border-bottom: solid 1px #E91E63;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #E91E63 4%);
 }
+
 input[type="email"]:not(:focus):not(:valid):not([value=""]) {
     border-bottom: solid 1px #E91E63;
     background-position: 0 0;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #E91E63 4%);
 }
+
 input[type="email"]:not(:focus):not(:valid):not([value=""])::-webkit-input-placeholder {
     color: #E91E63;
 }
+
 input[type="email"]:not(:focus):not(:valid):not([value=""]) ~ span.validation-text {
     visibility: visible;
     color: #E91E63;
@@ -127,6 +139,7 @@ input[type="email"]:not(:focus):not(:valid):not([value=""]) ~ span.validation-te
     display: flex;
     align-items: stretch;
 }
+
 .patient .flex textarea {
     line-height: 120%;
 }
@@ -146,6 +159,7 @@ input[type="email"]:not(:focus):not(:valid):not([value=""]) ~ span.validation-te
     margin: 30px 0 0 25px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
 }
+
 .patient button:hover {
     -webkit-transform: translateY(-2px);
     transform: translateY(-2px);
@@ -168,15 +182,18 @@ input[type="email"]:not(:focus):not(:valid):not([value=""]) ~ span.validation-te
     text-decoration: none;
     box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
 }
+
 .patient a i {
     margin-right: 20px;
     transition: margin-right 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
 }
+
 .patient a:hover {
     width: 134px;
     -webkit-transform: translateX(-50px);
     transform: translateX(-50px);
 }
+
 .patient a:hover i {
     margin-right: 10px;
 }

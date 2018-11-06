@@ -1,36 +1,34 @@
 <html>
 <body>
 <?php
- 
+
 // Create connection
-$conn = new mysqli('localhost','root','');
- 
+$conn = new mysqli('localhost', 'root', '');
+
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-} 
+}
 
 // this will select the Database sample_db
-mysqli_select_db($conn,"healthcare");
- 
+mysqli_select_db($conn, "healthcare");
+
 
 // create INSERT query
- 
-$query="SELECT P_SSN FROM patient WHERE P_SSN='$_POST[pid]'";
-$result=mysqli_query($conn,$query);
-$array=mysqli_fetch_row($result);
- if($array[0]>0)
- { 
-$sql="INSERT INTO payment () VALUES ('$_POST[rno]','$_POST[amt]'-'$_POST[pamt]','$_POST[amt]','$_POST[status]','$_POST[pd]','$_POST[pid]','$_POST[pamt]')";
- 
-if ($conn->query($sql) === TRUE) {
-    echo "New payment record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-}
-else
-echo "INVALID PATIENT RECORD"; 
+
+$query = "SELECT P_SSN FROM patient WHERE P_SSN='$_POST[pid]'";
+$result = mysqli_query($conn, $query);
+$array = mysqli_fetch_row($result);
+if ($array[0] > 0) {
+    $sql = "INSERT INTO payment () VALUES ('$_POST[rno]','$_POST[amt]'-'$_POST[pamt]','$_POST[amt]','$_POST[status]','$_POST[pd]','$_POST[pid]','$_POST[pamt]')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "New payment record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+} else
+    echo "INVALID PATIENT RECORD";
 mysqli_close($conn);
 ?>
 </body>
@@ -40,56 +38,55 @@ mysqli_close($conn);
 <head><title> medi.php </title></head>
 <body bgcolor="#FFB6C1">
 <center>
-<?php
- // Create connection
-$conn = new mysqli('localhost','root','');
- 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
+    <?php
+    // Create connection
+    $conn = new mysqli('localhost', 'root', '');
 
- 
-// this will select the Database sample_db
-mysqli_select_db($conn,"healthcare");
- 
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
 
 
-$query="select * from payment"; 
-$result=mysqli_query($conn,$query);
-?>
- 
-<h3> PAYMENT DETAILS </h3>
- 
-<table border="1">
-<tr>
-<th> RECIEPT NO </th>
-<th> BALANCE </th>
-<th> AMOUNT</th>
-<th> STATUS</th>
- <th>PAYMENT DATE</th> 
- <th> PATIENT ID</th>
- <th> PAID AMOUNT</th>
- </tr>
- 
-<?php while($array=mysqli_fetch_row($result)){?>
-<tr>
-<td><?php echo $array[0];?></td>
-<td><?php
-$array[1]=$array[2]-$array[6];
- echo $array[1];?></td>
-<td><?php echo $array[2];?></td>
-<td><?php echo $array[3];?></td>
-<td><?php echo $array[4];?></td>
-<td><?php echo $array[5];?></td>
-<td><?php echo $array[6];?></td>
-</tr>
+    // this will select the Database sample_db
+    mysqli_select_db($conn, "healthcare");
 
 
-<?php }
- mysqli_free_result($result);
- mysqli_close($conn); ?>
-</table>
+    $query = "select * from payment";
+    $result = mysqli_query($conn, $query);
+    ?>
+
+    <h3> PAYMENT DETAILS </h3>
+
+    <table border="1">
+        <tr>
+            <th> RECIEPT NO</th>
+            <th> BALANCE</th>
+            <th> AMOUNT</th>
+            <th> STATUS</th>
+            <th>PAYMENT DATE</th>
+            <th> PATIENT ID</th>
+            <th> PAID AMOUNT</th>
+        </tr>
+
+        <?php while ($array = mysqli_fetch_row($result)) { ?>
+            <tr>
+                <td><?php echo $array[0]; ?></td>
+                <td><?php
+                    $array[1] = $array[2] - $array[6];
+                    echo $array[1]; ?></td>
+                <td><?php echo $array[2]; ?></td>
+                <td><?php echo $array[3]; ?></td>
+                <td><?php echo $array[4]; ?></td>
+                <td><?php echo $array[5]; ?></td>
+                <td><?php echo $array[6]; ?></td>
+            </tr>
+
+
+        <?php }
+        mysqli_free_result($result);
+        mysqli_close($conn); ?>
+    </table>
 </body>
 </html>
 

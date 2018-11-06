@@ -1,25 +1,25 @@
 <html>
 <body>
 <?php
- 
+
 // Create connection
-$conn = new mysqli('localhost','root','');
- 
+$conn = new mysqli('localhost', 'root', '');
+
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-} 
+}
 
- 
+
 // this will select the Database sample_db
-mysqli_select_db($conn,"healthcare");
- 
- 
+mysqli_select_db($conn, "healthcare");
+
+
 // create INSERT query
 
- 
-$sql="UPDATE patient SET GENDER ='$_POST[pid1]' WHERE GENDER='$_POST[pid]'";
- 
+
+$sql = "UPDATE patient SET GENDER ='$_POST[pid1]' WHERE GENDER='$_POST[pid]'";
+
 if ($conn->query($sql) === TRUE) {
     echo " Patient record updated successfully";
 } else {
